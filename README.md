@@ -16,6 +16,8 @@ Pretty much the following quote formalized into a skill:
 
 > *"I have a few hours of spare focus time - what should I work on?"*
 
+Credit to [@jameesy](https://x.com/jameesy)
+
 ## Installation
 
 Fetch the latest with
