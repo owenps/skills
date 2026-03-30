@@ -22,6 +22,10 @@ Credit to [@jameesy](https://x.com/jameesy)
 
 Run at the end of a dev session to produce a structured summary of lessons learned, decisions made, and suggested vault updates for an Obsidian knowledge base.
 
+### `distill`
+
+Process zibaldone entries into commonplace notes — expanding existing notes, creating new ones, or aggregating across topics.
+
 ## Installation
 
 Fetch the latest with
