@@ -1,36 +1,22 @@
 ---
 name: lessons-learned
-description: Run at the end of a dev session to produce a structured summary of lessons learned, decisions made, and suggested vault updates. Use when wrapping up work or when asked to summarize what was learned.
+description: Run at the end of a dev session to write learnings directly to the zibaldone. Use when wrapping up work or when asked to capture what was learned.
+allowed-tools: Read, Edit, Write, Bash
 ---
 
 # Lessons Learned
 
-Review the current session's work and produce a structured lessons-learned summary for the knowledge base.
-This output will be pasted into the Obsidian vault Claude instance for integration.
-
-## Output Format
-
-Use the following format:
-
-```md
-# Lessons Learned — [brief description of what was worked on]
-Date: [today's date]
-Repo: [repo name]
-PR: [PR link]
-
-## Decisions made
-- [What was decided and why. Focus on the *reasoning*, not the code.]
-
-## Things learned
-- [Surprising behaviors, gotchas, patterns that worked, corrections to prior assumptions]
-
-## Suggested vault updates
-- **[note topic]**: [what to add or revise, and why]
-```
+Write learnings from this dev session directly into the zibaldone.
 
 ## Instructions
 
 1. Review the conversation history for this session
 2. Extract decisions, surprises, and learnings — not implementation details that live in the code
-3. For "suggested vault updates", think about what knowledge would have been useful at the *start* of this session — that's what belongs in the vault
-4. Keep it concise. A few strong entries beat many weak ones
+3. Get the repo name and branch name
+4. Sanitize the branch name by replacing `/` with `-`
+5. Write the file to `~/Documents/Notes/zibaldone/{repo}-{branch}.md`
+   - Example: `zibaldone/ledge-api-feat-auth-rework.md`
+6. If the file already exists, append new entries to it
+7. Write raw thoughts, one entry per distinct idea using `- ` list format. No headers, no categories. This is a zibaldone — unstructured capture
+8. Keep entries concise but preserve the *reasoning* and *why*, not just what happened
+9. A few honest entries beat many filler ones
