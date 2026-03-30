@@ -18,6 +18,10 @@ Pretty much the following quote formalized into a skill:
 
 Credit to [@jameesy](https://x.com/jameesy)
 
+### `lessons-learned`
+
+Run at the end of a dev session to produce a structured summary of lessons learned, decisions made, and suggested vault updates for an Obsidian knowledge base.
+
 ## Installation
 
 Fetch the latest with
