@@ -16,7 +16,7 @@ Write learnings from this dev session directly into the zibaldone.
 4. Sanitize the branch name by replacing `/` with `-`
 5. Write the file to `~/Documents/Notes/zibaldone/{repo}-{branch}.md`
    - Example: `zibaldone/ledge-api-feat-auth-rework.md`
-6. If the file already exists, append new entries to it
+6. If the file already exists, append new entries to it. If the file has `distilled: true` in its frontmatter, remove that property (the file now has new unprocessed content)
 7. Write raw thoughts, one entry per distinct idea using `- ` list format. No headers, no categories. This is a zibaldone — unstructured capture
 8. Keep entries concise but preserve the *reasoning* and *why*, not just what happened
 9. A few honest entries beat many filler ones
